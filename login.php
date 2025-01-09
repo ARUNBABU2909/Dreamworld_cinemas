@@ -65,13 +65,7 @@
 
 </html>
 <?php
-$conn = new mysqli(
-
-    "localhost",
-    "root",
-    "",
-    "dreamworld"
-);
+$conn = new mysqli("localhost", "root", "", "dreamworld");
 if (isset($_POST["username"]) && isset($_POST["password"])) {
     $un = $_POST["username"];
     $pwd = $_POST["password"];
